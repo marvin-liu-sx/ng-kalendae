@@ -1,0 +1,45 @@
+
+<div id = "container">
+    <div >
+        <div id="btn" >
+            <div id="selectContainer" ng-click = "showDate()">
+                <div id="selectTime" ng-model = "mySelectDate">
+                    {{startTime}}{{endTime}}
+                </div>
+            </div>
+            <div id = "img" ng-click = "showDate()"></div>
+        </div>
+        <div id = "QuickSelect"ng-click = "comeBack()" ng-if="quickTime">
+            <div id="QuickTime" ng-click ="onClick(1)">
+                <div><span>近7天</span></div>
+                <img id = "Quick7" src="./libs/angular/mtbi-datepicker/images/u93_line.png" alt=""ng-hide ="sta1"/>
+            </div>
+            <div id="QuickTime" ng-click ="onClick(2)">
+                <div><span>近14天</span></div>
+                <img id = "Quick14" src="./libs/angular/mtbi-datepicker/images/u93_line.png" alt="" ng-hide ="sta2"/>
+            </div>
+            <div id="QuickTime" ng-click ="onClick(3)">
+                <div><span>近30天</span></div>
+                <img id = "Quick30" src="./libs/angular/mtbi-datepicker/images/u93_line.png" alt=""ng-hide ="sta3"/>
+            </div>
+        </div>
+    </div>
+    <div id = "datePicker" ng-hide = "isHide" >
+        <div id="selectedMenu" style="">
+            <div id="startTime" ng-hide="isHide1">
+                <span id = "startSelect"></span>
+            </div>
+            <span id = "line" ng-hide="isHide2">-</span>
+            <div id="endTime" ng-hide="isHide2">
+                <span id ="endSelect"></span>
+            </div>
+            <div id="confirmBtn" ng-click="confirmDate()">
+                <span id="confirm">确定</span>
+            </div>
+            <div id="cancelBtn" ng-click="cancelSelect()">
+                <span id ="cancel">取消</span>
+            </div>
+        </div>
+    </div>
+</div>
+

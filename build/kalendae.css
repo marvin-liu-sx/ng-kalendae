@@ -1,0 +1,506 @@
+/** Base container **/
+#container{
+    position: relative;
+    width:100%;
+    z-index: 100;
+}
+#datePicker{
+    position: relative;
+    width: 1500px;
+}
+#btn{
+    position: relative;
+    width: 240px;
+    height: 35px;
+    border-radius: 6px;
+    background-color: #eceff6;
+}
+#img{
+    position: relative;
+    float: right;
+    width: 45px;
+    height: 30px;
+    background: transparent url(../images/calendar.png) no-repeat scroll 8px;
+
+}
+#selectContainer{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 5px;
+    width:185px;
+    height:24px;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+#selectTime{
+    position: relative;
+    text-align: center;
+    line-height: 24px;
+    color:darkcyan;
+    white-space:nowrap;
+    overflow:hidden;
+}
+/*#l2:hover{*/
+    /*overflow-x: auto;*/
+/*}*/
+
+#QuickSelect{
+    position: absolute;
+    margin-left: 240px;
+    margin-top: -30px;
+    width: 200px;
+    
+}
+#QuickTime{
+    position: relative;
+    margin-left: 20px;
+    font-size: 15px;
+    color:#544F4F;
+    float: left;
+    cursor:pointer;
+}
+
+#Quick7{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: -1px;
+}
+#Quick14{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 4px;
+}
+#Quick30{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 4px;
+}
+/*#l8{*/
+    /*position: relative;*/
+    /*float: left;*/
+    /*margin-left: 5px;*/
+    /*margin-top: 8px;*/
+    /*height: 30px;*/
+    /*width: 78px;*/
+    /*line-height: 30px;*/
+    /*border: 1px solid black;*/
+/*}*/
+/*#l9{*/
+    /*position: relative;*/
+    /*float: left;*/
+    /*margin-top: 8px;*/
+    /*margin-left: 0px;*/
+    /*width: 10px;*/
+    /*height: 30px;*/
+    /*text-align: center;*/
+    /*line-height: 30px;*/
+/*}*/
+/*#l10{*/
+    /*position: relative;*/
+    /*float: left;*/
+    /*margin-left: 0px;*/
+    /*margin-top: 8px;*/
+    /*height: 30px;*/
+    /*line-height: 30px;*/
+    /*width: 78px;*/
+    /*border: 1px solid black;*/
+/*}*/
+#confirmBtn{
+    position: relative;
+    right: 50px;
+    margin-top: 8px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 60px;
+    border: 1px solid black;
+}
+#signOutBtn{
+    position: relative;
+    right: 5px;
+    margin-top: 8px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    width: 60px;
+    border: 1px solid black;
+}
+#bottomTable{
+    position: relative;
+    margin-top: -118px;
+    margin-left: 5px;
+    height: 50px;
+    border: 1px solid lightgray;
+}
+#selectedMenu{
+    position: absolute;
+    border: 1px solid darkgray;
+    top: 280px;
+    left: 5px;
+    height: 50px;
+    background-color: #ffffff;
+    /*width: 292px;*/
+}
+#startTime{
+    position:absolute;
+    margin-top: 8px;
+    margin-left: 4px;
+    height:30px;
+    width: 75px;
+    text-align: center;
+    border: 1px solid gray;
+}
+#endTime{
+    position:absolute;
+    margin-top: 8px;
+    margin-left: 85px;
+    height:30px;
+    width: 75px;
+    text-align: center;
+    border: 1px solid gray;
+}
+#confirmBtn{
+    position:absolute;
+    margin-top: 8px;
+    text-align: center;
+    right: 55px;
+    height:30px;
+    width: 45px;
+    border-radius: 4px;
+    border: 1px solid lightblue;
+    background-color: darkblue;
+    cursor: default;
+}
+#confirmBtn:hover{
+    background-color: blue;
+}
+#cancelBtn{
+    position:absolute;
+    margin-top: 8px;
+    right: 5px;
+    height:30px;
+    width: 45px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid lightblue;
+    background-color: lightgray;
+    cursor: default;
+}
+#cancelBtn:hover{
+    background-color: #ffffff;
+}
+#startSelect{
+    font-size: 10px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+}
+#endSelect{
+    font-size: 10px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+}
+#confirm{
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+     cursor:pointer;
+}
+#cancel{
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+     cursor:pointer;
+}
+#line{
+    position:absolute;
+    margin-top: 12px;
+    margin-left: 79px;
+    height:30px;
+    width: 4px;
+    text-align: center;
+
+}
+.kalendae {
+	display: inline-block;zoom:1;*display:inline;
+	/*background:#eee;*/
+    background-color: #ffffff;
+	padding:10px;
+	margin:5px;
+    border: 1px solid darkgray;
+	font-size:14px;
+	font-family:'Helvetica Neue', 'Helvetica';
+	cursor:default;
+	position:relative;
+}
+
+
+.kalendae.k-floating {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:100000;
+	margin:0;
+	box-shadow:0 1px 3px rgba(0,0,0,0.75);
+	-moz-box-shadow:0 1px 3px rgba(0,0,0,0.75);
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.75);
+}
+
+
+/** Kalendae.Input's popup close button **/
+.kalendae .k-btn-close {
+	position:absolute;
+	top:-8px;
+	right:-8px;
+	width:16px;
+	height:16px;
+	background:white;
+	border:2px solid #ccc;
+	color:#999;
+	line-height:17px;
+	text-align:center;
+	font-size:13px;
+	border-radius:10px;
+	box-shadow:0 1px 3px rgba(0,0,0,0.75);
+	cursor:pointer;
+	text-decoration:none;
+}
+.kalendae .k-btn-close:after {content:"\2716";}
+.kalendae .k-btn-close:hover {
+	color:#7EA0E2;
+	background:white;
+	border-color:#7EA0E2;
+}
+
+/** Month Container **/
+.kalendae .k-calendar {display: inline-block;zoom:1;*display:inline;width:270px;vertical-align:top}
+
+/*自定义添加*/
+.kalendae .k-straight-line{
+    white-space:nowrap;position:relative;height:1px;background-color: darkgray;
+}
+
+/** Month Title Row **/
+.kalendae .k-title {white-space:nowrap;position:relative;height:35px;background-color: #ffffff}
+.kalendae .k-caption {position:relative;font-size:14px;line-height:18px;margin-left: 100px
+;top:8px}
+
+
+/** Month and Year Buttons **/
+.kalendae .k-btn-previous-month,
+.kalendae .k-btn-next-month
+{
+    position:absolute;
+	width:23.9px;
+	height:26px;
+	top:4px;
+	text-decoration:none;
+    font-size: 18px;
+}
+
+/*.kalendae .k-btn-previous-year {left:0;}*/
+.kalendae .k-btn-previous-month {
+    left:10px;
+    background: transparent url('../images/p1.png') no-repeat scroll 1px 2px;
+}
+.kalendae .k-btn-next-month {
+    right:10px;
+    background: transparent url('../images/p1.png') no-repeat scroll -22px 2px;
+}
+
+.kalendae .k-btn-previous-month:hover{
+    background: transparent url('../images/p1.png') no-repeat scroll -45px 2px;
+}
+.kalendae .k-btn-next-month:hover {
+    background: transparent url('../images/p1.png') no-repeat scroll -69px 2px;
+}
+
+.kalendae .k-first-month .k-btn-next-month,
+.kalendae .k-middle-month .k-btn-next-month,
+.kalendae .k-middle-month .k-btn-previous-month,
+.kalendae .k-last-month .k-btn-previous-month
+{display:none;}
+
+/** Disable year nav option **/
+/*.kalendae .k-title.k-disable-year-nav .k-btn-next-year,*/
+/*.kalendae .k-title.k-disable-year-nav .k-btn-previous-year { display: none; }*/
+.kalendae .k-title.k-disable-year-nav .k-btn-next-month { right: 0; }
+.kalendae .k-title.k-disable-year-nav .k-btn-previous-month { left: 0; }
+
+/** Force specific width for month container contents **/
+.kalendae .k-header{
+    width: 262px;
+    height: 30px;
+    overflow: hidden;
+    margin-left: 5px;
+    margin-top: 4px;
+    border: 1px solid lightgray;
+    background-color: lightblue;
+}
+.kalendae .k-title{
+    width:270px;
+    display:block;
+    overflow:hidden;
+}
+.kalendae .k-days {
+	width:262px;
+    margin-left: 5px;
+	display:block;
+	overflow:hidden;
+    /*background-color: red;*/
+
+}
+
+
+/** Hide unusable buttons **/
+.kalendae.k-disable-next-month-btn .k-btn-next-month,
+.kalendae.k-disable-previous-month-btn .k-btn-previous-month,
+.kalendae.k-disable-next-year-btn .k-btn-next-year,
+.kalendae.k-disable-previous-year-btn .k-btn-previous-year {
+	display:none;
+}
+
+
+/** Week columns and day cells **/
+.kalendae .k-header span{
+    float:left;
+    margin:6px 12px;
+}
+.kalendae .k-days span {
+	float:left;
+    text-align: center;
+	margin:4px 0px;
+}
+
+.kalendae .k-header span {
+	text-align:center;
+	font-weight:bold;
+	width:20px;
+    margin:4px 8.5px;
+	color:#666;
+}
+
+.kalendae .k-days span {
+    line-height: 25px;
+    margin-top: 3px;
+	width:37.4px;
+    height: 24px;
+}
+
+/** Today **/
+/*.kalendae .k-today {*/
+	/*text-decoration:underline;*/
+/*}*/
+
+/** Days inside of the month view **/
+.kalendae .k-days span.k-in-month.k-active {
+	background-color:#fff;
+}
+/** Days outside of the month view (before the first day of the month, after the last day of the month) **/
+.kalendae .k-days span.k-out-of-month {
+    color:#ddd;
+}
+
+/** Selectable  **/
+.kalendae .k-days span.k-active {
+	cursor:pointer;
+}
+
+/** Selected day, when outside the selectable area **/
+.kalendae .k-days span.k-selected {
+	/*border-color:#1072A5;*/
+	/*color:#1072A5;*/
+}
+
+/** Selected day, when inside the selectable area **/
+.kalendae .k-days span.k-selected.k-active {
+    background: transparent url('../images/p1.png') no-repeat scroll -92px 0.5px;
+    /*background: transparent url('../p1.png') no-repeat scroll -170px 0.5px;*/
+}
+.kalendae .k-days span.k-selected-first.k-active {
+    background: transparent url('../images/p1.png') no-repeat scroll -124px 0.5px;
+    /*background: transparent url('../p1.png') no-repeat scroll -170px 0.5px;*/
+}
+.kalendae .k-days span.k-selected-last.k-active {
+    background: transparent url('../images/p1.png') no-repeat scroll -200px 0.5px;
+    /*background: transparent url('../p1.png') no-repeat scroll -170px 0.5px;*/
+}
+.kalendae .k-days span.k-selected-first.k-out-of-month.k-active {
+    background: none;
+    color:#ddd;
+}
+.kalendae .k-days span.k-selected-last.k-out-of-month.k-active {
+    color:#ddd;
+    background: none;
+}
+.kalendae .k-days span.k-selected.k-out-of-month.k-active {
+    color:#ddd;
+    background: none;
+}
+/** Days between the start and end points on a range, outside of the selectable area **/
+.kalendae .k-days span.k-range {
+	background:none;
+	border-color:#6DD4FE;
+}
+
+/** Days between the start and end points on a range, inside of the selectable area **/
+.kalendae .k-days span.k-range.k-in-month {
+    background: transparent url('../images/p1.png') no-repeat scroll -170px 0.5px;
+}
+
+/** Selectable day, hovered **/
+.kalendae .k-days span.k-active:hover {
+	border-color:#666;
+}
+
+/** Selectable week, hovered **/
+.kalendae .k-week:hover span.k-active {
+	border-color:#666;
+}
+
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+/*-------------------------------------IE8 ONLY CODE BELOW THIS LINE--------------------------------------------*/
+
+.kalendae.ie8.k-floating {
+	border:1px solid #ccc;
+}
+
+.kalendae.ie8 .k-btn-close {
+	width:20px;
+	height:20px;
+	border:none;
+	background:url('close.png') no-repeat top left;
+}
+.kalendae.ie8 .k-btn-close:after {display:none;}
+
+.kalendae.ie8 .k-btn-previous-month,
+.kalendae.ie8 .k-btn-next-month
+{
+    width:16px;
+    height:16px;
+    cursor:pointer;
+    background: transparent url(p1.png) no-repeat scroll 8px 1px;
+    position:absolute;
+    top:0;
+}
+
+.kalendae.ie8 .k-btn-next-month
+/*.kalendae.ie8 .k-btn-next-year */
+{
+    background-position:center right;
+}
+.kalendae.ie8 .k-btn-previous-month:hover,
+.kalendae.ie8 .k-btn-next-month:hover {
+    background-color:#7EA0E2
+}
+
+.kalendae.ie8 .k-btn-previous-month:after,
+.kalendae.ie8 .k-btn-next-month:after,
+{
+    display:none;
+}
+
